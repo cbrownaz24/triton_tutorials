@@ -74,4 +74,4 @@ def benchmark(size, provider):
     gbps = lambda ms: 3 * x.numel() * x.element_size() * 1e-9 / (ms * 1e-3)
     return gbps(ms), gbps(max_ms), gbps(min_ms)
 
-benchmark.run(print_data=True, save_path='/home/connorb/triton/vector-addition-results/')
+benchmark.run(print_data=True, save_path='/home/connorb/triton_tutorials/vector-addition-results/')
